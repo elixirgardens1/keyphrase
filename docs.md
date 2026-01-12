@@ -5,6 +5,8 @@
 * If the 'Hide SKUs' checkbox is selected, any SKUs that exist in the `'hidden_skus.txt'` file are removed from the list.
 * The 2 columns of data (sku, title) are output to a TSV (Tab Separated Values) files, plus and empty `'keyphrase'` column.
 
+Note: SKUs are enclosed in single quotes to avoid any leading zeros being omitted.
+
 ## All records with keyphrases
 
 NOTES_HERE
