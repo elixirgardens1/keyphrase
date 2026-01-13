@@ -34,38 +34,53 @@ Notes:
 * Retrieves a list of skus from the `'autocomplete_order'` table.
 * Display all website skus that don't exist in `'autocomplete_order'` and  don't exist in the `'hidden_skus.txt'` file.
 
-~~~
+```
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
 
-~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
