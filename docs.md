@@ -9,28 +9,30 @@ Note: SKUs are enclosed in single quotes to avoid any leading zeros being omitte
 
 ## All records with keyphrases
 
-* Retrieve list of skus (keys) and keyphrases (values) from the `'autocomplete_order'` table.
-* Retrieve list of skus (keys) and titles (values) from the `'sku_titles'` table (`'lookup_variations_titles'` database).
+* Retrieve a list of skus (keys) and keyphrases (values) from the `'autocomplete_order'` table.
+* Retrieve a list of skus (keys) and titles (values) from the `'sku_titles'` table (`'lookup_variations_titles'` database).
 * Create a TSV (Tab Separated Values) file with 3 columns of data (keyphrase, sku, title).
 
 Notes:
 * SKUs are enclosed in single quotes to avoid any leading zeros being omitted.
-* If any skus that exist in `'autocomplete_order'` are missing from `'sku_titles'` then `'NONE'`  is substituted for the title.
+* If no title exists for a given sku then `'NONE'`  is substituted for the title.
 
 ## All records without prices
 
 * Retrieves a list of skus and prices from the website.
-* Retrieve list of skus (keys) and keyphrases (values) from the `'autocomplete_order'` table.
-* Retrieve list of skus (keys) and titles (values) from the `'sku_titles'` table (`'lookup_variations_titles'` database).
+* Retrieve a list of skus (keys) and keyphrases (values) from the `'autocomplete_order'` table.
+* Retrieve a list of skus (keys) and titles (values) from the `'sku_titles'` table (`'lookup_variations_titles'` database).
 * Create a TSV (Tab Separated Values) file with 3 columns of data (keyphrase, sku, title). Records with skus that don't have a corresponding price on the website are omitted.
 
 Notes:
 * SKUs are enclosed in single quotes to avoid any leading zeros being omitted.
-* If any skus that exist in `'autocomplete_order'` are missing from `'sku_titles'` then `'NONE'`  is substituted for the title.
+* If no title exists for a given sku then `'NONE'`  is substituted for the title.
 
 ## Skus that only exist on website
 
-NOTES_HERE
+* Retrieves a list of skus and prices from the website.
+* Retrieves a list of skus from the `'autocomplete_order'` table.
+* Display all website skus that don't exist in `'autocomplete_order'` and  don't exist in the `'hidden_skus.txt'` file.
 
 ~~~
 
